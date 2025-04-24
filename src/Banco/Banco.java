@@ -7,8 +7,8 @@ public class Banco {
     private List<Cliente> clientes = new ArrayList<>();
     private List<Conta> contas = new ArrayList<>();
 
-    public Cliente cadastrarCliente(String nome, String cpf) {
-        Cliente c = new Cliente(nome, cpf);
+    public Cliente cadastrarCliente(String nome) {
+        Cliente c = new Cliente(nome, nome);
         clientes.add(c);
         return c;
     }

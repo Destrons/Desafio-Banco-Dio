@@ -9,8 +9,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
         Banco banco = new Banco();
 
-        Cliente cli1 = banco.cadastrarCliente("Alice", "111.111.111-11");
-        Cliente cli2 = banco.cadastrarCliente("Bob",   "222.222.222-22");
+        Cliente cli1 = banco.cadastrarCliente("Alice");
+        Cliente cli2 = banco.cadastrarCliente("Bob");
         Conta cc1 = banco.criarContaCorrente(cli1);
         Conta cp1 = banco.criarContaPoupanca(cli2);
 
